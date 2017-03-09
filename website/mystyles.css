@@ -1,0 +1,72 @@
+body {
+	font-family: "Slabo 27px", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; /* The lobster font is an external Google font */
+	margin-bottom: 5%;
+}
+
+.bottom-margin {
+	margin-top: 5px;
+	margin-bottom: 50px; /* This keeps content from being covered by the footer in mobile view */
+}
+
+.welcoming {
+	color: #4143F5;
+	margin-top: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.hometext {
+	font-weight: bold;
+	text-align: center;
+	color: #4143F5;
+}
+
+.scroll { /* This bit of code encases the images into a horizontal scrolling gallery */
+  height:480px;
+  margin: 1%;
+  overflow:auto;
+  white-space:nowrap;
+  width:100%;
+  border: 1px;
+  border-color: #FFFFFF;
+}
+
+.scroll img {
+  margin: 0 10% 0 0;
+  max-width: 100%;
+  max-height: 97%;
+}
+
+.googlemap { /* This puts a border around my map iframe */
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.contactform { /* This styles my contact form */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 2% 2% 2%;
+  border-radius: 5px;
+}
+
+.curvedcorners { /* This is used to curve the corners on any images when needed */
+	border-radius: 8px;
+	padding: 2px;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.smediaicons { /* This positions my social media icons */
+  margin-top: 15px;
+  margin-bottom: 15px;
+	padding: inherit;
+}
+
+@media (min-width: 768px) {
+  .smediaicons {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

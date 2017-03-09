@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This line is needed for bootstrap to work-->
+<meta name="description" content="Photography"> <!--This line and the one below I added to improve the site's search optimisation-->
+<meta name="keywords" content="TadhgOHalloran, Photography, Cork, Photos, Tadhg">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <!--This links to the bootstrap.css file that I downloaded-->
+<link rel="stylesheet" type="text/css" href="mystyles.css"> <!--This is my own css file-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> <!--This line is needed so that my social media icons display-->
+<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> <!--This line calls in the external font that I've used-->
+<link rel="shortcut icon" href="camera_64.ico" type="image/x-icon" /> <!--This line enables me to put a little camera favicon in the browser tab-->
+<title>Tadhg O'Halloran Photography</title>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top"> <!--This div contains the header and navbar menu. All classes are from bootstrap-->
+	<div class="container">
+
+		<a href="index.html" class="navbar-brand">Tadhg O'Halloran Photography</a>
+
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"> <!--This bit of code turns my nav menu into a hamburger icon, it's incorporated from bootstrap-->
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse navHeaderCollapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="index.html">Home</a></li>
+      			<li class="active dropdown"> <!--This dropdown menu is a bootstrap built-in feature-->
+      				<a href="#" class = "dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+      				<ul class="dropdown-menu">
+      					<li><a href="project1.html">Of Itself</a></li>
+      					<li><a href="project2.html">For Itself</a></li>
+      				</ul>
+      			</li>
+      			<li class="active"><a href="about.html">About</a></li>
+      			<li class="active"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row bottom-margin">
+
+		<div class="col-sm-4"> <!-- Left side text content -->
+	  		<h3>Contact</h3>
+	  		<p> Please feel free to contact me with any queries you may have and I will get back to you as soon as possible. Also, feel free to discover more of my work at: </p>
+	  		<h4> Instagram:</h4>
+	  		<p><a href="https://www.instagram.com/tadhgohalloran/">instagram.com/tadhgohalloran</a></p>
+	  		<h4>Twitter</h4>
+	  		<p><a href="https://twitter.com/HanrahanrahanO">twitter.com/Hanrahanrahan</a></p>
+	  	</div>
+
+		<div class="col-sm-4"> <!-- Contact form -->
+        	<form class="contactform" onsubmit="formSubmit()">
+          	Your name:*<br>
+          	<input type="text" name="firstname" maxlength="30" style="width: 80%; border-radius:3px;" required><br>
+          	Email address:*<br>
+          	<input type="email" name="email" maxlength="30" style="width: 80%; border-radius:3px;" required><br>
+          	Telephone:<br>
+          	<input type="tel" name="telephone" maxlength="15" style="width: 80%; border-radius:3px;"><br>
+          	Your message:*<br>
+          	<textarea name="message" rows="10" style="width:80%; border-radius:3px;" required></textarea><br>
+          	<input type="submit" value="Send" style="width: 80%; border-radius:3px; color:#fff; background: #092CC4; margin-left:auto; margin-right:auto;"><br>
+        	</form>
+	    </div>
+
+		<div class="col-sm-4"> <!-- google map iframe -->
+	  		<div class="googlemap">
+	  			<iframe width="100%" height="400px" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=400&amp;hl=en&amp;coord=51.89522599638901,-8.473793033065817&amp;q=Sullivan's%20Quay%2C%20Cork%2C%20Ireland+(Tadhg%20O'Halloran%20Photography)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no">
+	  			<a href="http://www.mapsdirections.info/fr/creez-une-carte-google/">Créer une carte google maps</a> by <a href="http://www.mapsdirections.info/fr/">Carte Google Maps</a></iframe>
+	  		</div>
+	  	</div>
+
+	</div>
+</div>
+
+<div class = "navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container">
+		<a href="http://www.google.com/profiles/118414492708927834603" class="smediaicons pull-left"><i class="fa fa-google-plus" aria-hidden="true"></i>
+		<a href="https://twitter.com/HanrahanrahanO" class="smediaicons pull-left"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/tadhgohalloran/" class="smediaicons pull-left"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+		<p class="navbar-text pull-right"><i>Copyright &copy; 2016 Gavin O'Neill</i></p>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript" src="myscript.js"></script>
+
+</body>
+</html>

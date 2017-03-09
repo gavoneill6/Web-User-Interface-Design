@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This line is needed for bootstrap to work-->
+<meta name="description" content="Photography"> <!--This line and the one below I added to improve the site's search optimisation-->
+<meta name="keywords" content="TadhgOHalloran, Photography, Cork, Photos, Tadhg">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <!--This links to the bootstrap.css file that I downloaded-->
+<link rel="stylesheet" type="text/css" href="mystyles.css"> <!--This is my own css file-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> <!--This line is needed so that my social media icons display-->
+<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> <!--This line calls in the external font that I've used-->
+<link rel="shortcut icon" href="camera_64.ico" type="image/x-icon" /> <!--This line enables me to put a little camera favicon in the browser tab-->
+<title>Tadhg O'Halloran Photography</title>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top"> <!--This div contains the header and navbar menu. All classes are from bootstrap-->
+	<div class="container">
+
+		<a href="index.html" class="navbar-brand">Tadhg O'Halloran Photography</a>
+
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"> <!--This bit of code turns my nav menu into a hamburger icon, it's incorporated from bootstrap-->
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse navHeaderCollapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="index.html">Home</a></li>
+      			<li class="active dropdown"> <!--This dropdown menu is a bootstrap built-in feature-->
+      				<a href="#" class = "dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+      				<ul class="dropdown-menu">
+      					<li><a href="project1.html">Of Itself</a></li>
+      					<li><a href="project2.html">For Itself</a></li>
+      				</ul>
+      			</li>
+      			<li class="active"><a href="about.html">About</a></li>
+      			<li class="active"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row bottom-margin">
+
+		<div class="col-sm-4"> <!-- Left side image -->
+	  		<img src="images/otherimages/Image00011.jpg" alt="Mirror Portrait" class="img-responsive curvedcorners">
+	  	</div>
+
+		<div class="col-sm-4"> <!-- Main article -->
+      <p><br>Tadhg O'Halloran (b. 1986), is an Irish photographer based in Cork, where he studied photography at St. Johns College.
+      His work tends to be personal documentary-style black-and-white photographs of his friends, hometown and landscapes.
+      He has had various solo and group exhibitions in both Rome and Cork. He built and is currently running a darkroom in Cork City that is shared with other photographers and artists.</p>
+			<p>The photos on this website form part of a series of photographs where Tadhg tries to define moments of life as he saw it.
+			They are an attempt of forming the world around into photographs and to offer a glimpse of something that he perceived.</p>
+			<p>Tadhg's work was published in online photography zine Howl; the artist also took over Instagram Cork Photo in February of this year:<br><br>
+			<a href="http://howlzine.tumblr.com/post/134205774779/tadhg-o-halloran-this-is-an-example-of-the-work-i">Check out the photography on Howl</a>  <i class="fa fa-arrow-right" aria-hidden="true"></i><br><br>
+			<a href="https://www.instagram.com/corkphoto/">Go to Cork Photo's Instagram</a>  <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+	   </div>
+
+	  <div class="col-sm-4"> <!-- Rigth side image -->
+	  	<img src="images/otherimages/Image00012.jpg" alt="Darkroom" class="img-responsive curvedcorners">
+	  </div>
+
+  </div>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container">
+		<a href="http://www.google.com/profiles/118414492708927834603" class="smediaicons pull-left"><i class="fa fa-google-plus" aria-hidden="true"></i>
+		<a href="https://twitter.com/HanrahanrahanO" class="smediaicons pull-left"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/tadhgohalloran/" class="smediaicons pull-left"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+		<p class="navbar-text pull-right"><i>Copyright &copy; 2016 Gavin O'Neill</i></p>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</body>
+</html>
